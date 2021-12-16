@@ -41,7 +41,7 @@ label_title.pack()
 frame1.pack(expand=YES)
 
 # Création d'un bouton
-button = Button(frame1, text="Click me !", font=("Courrier", 25), bg='#F0F0F0', fg='black')
+button = Button(frame1, text="Click me !", font=("Courrier", 25), bg='#F0F0F0', fg='black', command=lambda: print("Click !"))
 button.pack(pady=25, fill=X)
 
 
