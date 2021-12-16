@@ -26,9 +26,23 @@ menu_bar.add_cascade(label="Edition", menu=edit_menu)
 
 window.config(menu=menu_bar)
 
-# Création d'un composant texte
-label_title = Label(window, text="Bienvenue sur l'application", font=("Courrier", 40), bg='#F0F0F0', fg='black')
+
+# Creation d'une frame
+frame1 = Frame(window, bg="#F0F0F0", bd=1, relief=SUNKEN)
+
+# Création de composants texte
+label_title = Label(frame1, text="Bienvenue sur l'application", font=("Courrier", 40), bg='#F0F0F0', fg='black')
 label_title.pack()
+
+label_title = Label(frame1, text="Comment allez-vous ?", font=("Courrier", 25), bg='#F0F0F0', fg='black')
+label_title.pack()
+
+# Affichage du frame
+frame1.pack(expand=YES)
+
+# Création d'un bouton
+button = Button(frame1, text="Click me !", font=("Courrier", 25), bg='#F0F0F0', fg='black')
+button.pack(pady=25, fill=X)
 
 
 # Affichage de la fenêtre
