@@ -164,7 +164,6 @@ def start_game(max_erreur = 8):
 
     words = lire_mots(path)
     mot_secret = words[randint(0, len(words)-1)]   
-    mot_secret = "EAU" 
 
     etat = "-" * len(mot_secret)
 
