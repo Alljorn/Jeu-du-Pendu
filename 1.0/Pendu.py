@@ -131,6 +131,7 @@ class Pendu_Game:
         self.liste_mots_possible = Pendu_Game.mots_longueur(self.list_words, len(self.mot_secret)) # Définie le nombre de mot possible
 
         self.update_widget() # Mise à jour des widjets
+        self.print_label_console("") # On vide l'affichage
         self.is_init = True # Indique qu'une partie à été initialisé
 
     
